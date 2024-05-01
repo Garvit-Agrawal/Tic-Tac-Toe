@@ -44,7 +44,6 @@ const checkwinner=()=>{
             if(pos1==pos2 && pos2==pos3)
             {
                 showwinner(pos1);
-                reset_button.classList.add("hide");
             }
         }
     }
@@ -67,6 +66,7 @@ let enableBoxes=()=>{
 let showwinner=(winner)=>{
     msg.innerText="Winner is "+winner;
     game_over.classList.remove("hide");
+    reset_button.classList.add("hide");
     disableBoxex();
 }
 
